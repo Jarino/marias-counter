@@ -1,4 +1,6 @@
 import React from 'react'
+import './PlayerName.css'
+
 
 class PlayerName extends React.Component {
   constructor(props) {
@@ -33,7 +35,7 @@ class PlayerName extends React.Component {
           </p>
         }
         {this.state.showInput &&
-          <input type='text' value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
+          <input className="PlayerName--input" type='text' value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
         }
       </th>
     )
