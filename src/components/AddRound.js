@@ -6,11 +6,13 @@ import { addRound } from '../actions'
 let AddRound = ({dispatch}) => {
   let input
 
+
   function handleClick(e) {
-    if (!input.value) {
+    let value = parseInt(input.value, 10)
+    if (!Number.isInteger(value)) {
       return
     }
-    dispatch(addRound(parseInt(input.value)))
+    dispatch(addRound(value))
     input.value = ''
   }
 
