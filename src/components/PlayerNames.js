@@ -6,7 +6,7 @@ let PlayerNames = ({ playerCount }) => {
   let playerNameElements = []
   
   for (let i = 1; i <= playerCount; i++) {
-    playerNameElements.push(<th><PlayerName name={'Player ' + i}/></th>)
+    playerNameElements.push(<PlayerName name={'Player ' + i}/>)
   }
 
   return (

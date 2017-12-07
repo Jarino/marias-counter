@@ -26,16 +26,16 @@ class PlayerName extends React.Component {
   
   render() {
     return (
-      <div>
+      <th onClick={this.handleClick}>
         {!this.state.showInput &&
-          <p onClick={this.handleClick}>
+          <p>
             { this.state.name }
           </p>
         }
         {this.state.showInput &&
           <input type='text' value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
         }
-      </div>
+      </th>
     )
   }
 }
