@@ -1,0 +1,16 @@
+.PlayerCountInput {
+  text-align: center;
+}
+
+.PlayerCountInput--button {
+  height: 30px;
+  background-color: #40a798;
+  color: #F1f1f1;
+  border: none;
+}
+
+.PlayerCountInput--input {
+  height: 30px;
+  padding: 0 0 0 5px;
+  margin: 0;
+}

@@ -1,0 +1,10 @@
+.StepBack {
+  display: inline;
+}
+
+.StepBack--button {
+  height: 30px;
+  background-color: #F5E1DA;
+  color: #476269;
+  border: none;
+}

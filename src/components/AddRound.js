@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addRound } from '../actions'
-
+import './AddRound.css'
 
 let AddRound = ({dispatch}) => {
   let input
@@ -17,12 +17,12 @@ let AddRound = ({dispatch}) => {
   }
 
   return (
-    <div>
-      <input ref={node => {
+    <div className="AddRound">
+      <input className="AddRound--input" placeholder="Zapísať body" ref={node => {
             input = node
           }}
         />
-      <button onClick={handleClick}>Pridaj</button>
+      <button className="AddRound--button" onClick={handleClick}>Pridaj</button>
     </div>
   )
 }

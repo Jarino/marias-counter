@@ -4,8 +4,10 @@ import { connect } from 'react-redux'
 import PointRow from './PointRow'
 import PlayerNames from './PlayerNames'
 
+import './RoundList.css'
+
 let RoundList = ({rounds}) => (
-  <table>
+  <table className="RoundList">
     <PlayerNames />
     <tbody>
       {rounds.map((round, index) => {

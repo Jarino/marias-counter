@@ -6,12 +6,12 @@ let PlayerNames = ({ playerCount }) => {
   let playerNameElements = []
   
   for (let i = 1; i <= playerCount; i++) {
-    playerNameElements.push(<td><PlayerName name={i}/></td>)
+    playerNameElements.push(<th><PlayerName name={'Player ' + i}/></th>)
   }
 
   return (
     <thead>
-      <tr>
+      <tr className="names">
         {playerNameElements}
       </tr>
     </thead>

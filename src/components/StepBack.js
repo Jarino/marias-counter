@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { stepBack } from '../actions'
+import './StepBack.css'
+
 
 let StepBack = ({dispatch}) => {
   function handleClick() {
@@ -10,7 +12,7 @@ let StepBack = ({dispatch}) => {
 
 
   return (
-    <div><button onClick={handleClick}>Step Back</button></div>
+    <div className="StepBack"><button className="StepBack--button" onClick={handleClick}>Vrátiť</button></div>
   )
 }
 

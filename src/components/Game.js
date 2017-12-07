@@ -4,14 +4,18 @@ import RoundList from './RoundList';
 import StepBack from './StepBack';
 import { connect } from 'react-redux'
 
+import './Game.css'
+
 let Game = ({ started }) => {
   return (
    <div>
     {started &&
       <div> 
-      <RoundList />
-      <AddRound />
-      <StepBack />
+        <RoundList />
+        <div className="Game--controls">
+          <StepBack />
+          <AddRound />
+        </div>
       </div>
     } 
    </div>

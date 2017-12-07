@@ -1,0 +1,28 @@
+/*
+ * pinkish: #F5E1DA
+ * white: #F1f1f1
+ * green: #40a798
+ * dark-blue: #476269
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+.AddRound {
+  display: inline;
+}
+
+.AddRound--input {
+  height: 30px;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+
+.AddRound--button {
+  height: 30px;
+  background-color: #40a798;
+  color: #F1f1f1;
+  border: none;
+  margin-left: 5px
+}
