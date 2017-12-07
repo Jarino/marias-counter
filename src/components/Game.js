@@ -9,8 +9,8 @@ let Game = ({ started }) => {
    <div>
     {started &&
       <div> 
-      <AddRound />
       <RoundList />
+      <AddRound />
       <StepBack />
       </div>
     } 

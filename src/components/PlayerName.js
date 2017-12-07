@@ -13,14 +13,11 @@ class PlayerName extends React.Component {
   }
   
   handleClick() {
-    console.log('handle click')
     this.setState({ ...this.state, showInput: true})
-    console.log(this.state)
   }
 
   handleChange(e) {
     this.setState({ ...this.state, name: e.target.value })
-    console.log(this.state);
   }
 
   handleBlur() {
